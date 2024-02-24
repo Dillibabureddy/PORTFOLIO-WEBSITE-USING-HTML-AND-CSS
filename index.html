@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="BANDI DILLI BABU REDDY's Portfolio.">
+    <meta name="author" content="BANDI DILLI BABU REDDY">
+    <link rel="icon" type="image/png" href="assets/imgs/my_photo_red.png">
+    <title>BANDI DILLI BABU REDDY's Portfolio</title>
+    <!-- Font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+<!-- Page Navbar -->
+<nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+    <div class="container">
+        <a class="logo" href="#">BANDI DILLI BABU REDDY</a>
+        <ul class="nav">
+            <li class="item">
+                <a class="link" href="#home">Home</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#about">About</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#certifications">Certifications</a>
+            </li>
+            <li class="item">
+                <a class="link" href="#skills">Skills</a>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const skillsList = document.getElementById("skillsList");
+                        const skills = ["C", "C++", "Java", "HTML", "CSS", "JS", "Python"];
+                
+                        // Function to dynamically create skill items
+                        function createSkillItem(skill) {
+                            const col = document.createElement("div");
+                            col.classList.add("col-md-3", "col-sm-6");
+                
+                            const skillItem = document.createElement("div");
+                            skillItem.classList.add("skill-item");
+                
+                            const skillText = document.createElement("p");
+                            skillText.textContent = skill;
+                
+                            skillItem.appendChild(skillText);
+                            col.appendChild(skillItem);
+                            skillsList.appendChild(col);
+                        }
+                
+                        // Add skills dynamically
+                        skills.forEach(createSkillItem);
+                    });
+                </script>
+                
+            </li>
+            <li class="item">
+                <a class="link" href="#projects">Projects</a>
+                <li class="item">
+                    <a class="link" href="https://github.com/Dillibabureddy" target="_blank">Projects</a>
+                </li>
+                
+            </li>
+            <li class="item">
+                <a class="link" href="#contact">Contact</a>
+            </li>
+        </ul>
+        <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
+        </a>
+    </div>
+</nav><!-- End of Page Navbar -->
+
+<!-- Page Content -->
+<div class="content">
+    <!-- Page Header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I am BANDI DILLI BABU REDDY</span>
+            </h1>
+            <p class="header-subtitle">ASPIRING WEB AND SOFTWARE DEVELOPER</p>
+            <a href="https://www.linkedin.com/in/dilli-babu-reddy-bandi-168a43222/" target="_blank" class="btn btn-primary">Visit My Works</a>
+        </div>
+    </header><!-- End of Page Header -->
+
+    <!-- About Section -->
+    <section class="section pt-0" id="about">
+        <div class="container text-center">
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/my_photo_bg.png" class="about-img" alt="BANDI DILLI BABU REDDY">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p class="about-description">Hi, I'm BANDI DILLI BABU Reddy, currently pursuing my second year of engineering at SRM University in Chennai. With a strong foundation in HTML, CSS, JS, and Java, I'm on the path to becoming a full-stack developer.</p>
+                    <p class="about-description">During my academic journey, I secured a commendable 95.5% in my intermediate studies at Narayana Junior College, following an outstanding 99% in my 10th-grade at Narayana School. These milestones fuel my commitment to excellence.</p>
+                    <p class="about-description">In the realm of coding, I've brought my skills to life through projects like a dynamic e-commerce website homepage, an age calculator, a weather app, and a simple calculator. Each project is a step in my journey toward mastering the art of full-stack development.</p>
+                    <p class="about-description">Beyond the screen, I find joy in the cinematic world, indulging my love for movies across various genres. Outside the digital realm, I'm a food enthusiast, always eager to explore new culinary delights.</p>
+                    <a href="./assets/resume.pdf" download class="btn-rounded btn btn-outline-primary mt-1">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section><!-- End of About Section -->
+</div><!-- End of Content -->
+
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
+        <p>&copy; 2024 BANDI DILLI BABU REDDY's Portfolio</p>
+        <p7>  gmail : dillibabureddy2005@gmail.com       </p7>
+        <p9>instagram : https://www.instagram.com/dillibabureddybandi/</p9>
+    </div>
+</footer><!-- End of Footer -->
+
+<!-- Custom Scripts -->
+<script src="script.js"></script>
+</body>
+</html>
